@@ -4,11 +4,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    /* Add rainbow gradient background */
+    background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
 }
 
 .calculator {
-    background: white;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background to show rainbow effect */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,6 +21,8 @@ body {
     font-size: 24px;
     text-align: right;
     margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .keypad {
@@ -34,10 +37,76 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
     color: white;
 }
 
+/* Assign rainbow colors to buttons */
+button:nth-child(1) {
+    background-color: red;
+}
+
+button:nth-child(2) {
+    background-color: orange;
+}
+
+button:nth-child(3) {
+    background-color: yellow;
+    color: black; /* Adjust text color for readability */
+}
+
+button:nth-child(4) {
+    background-color: green;
+}
+
+button:nth-child(5) {
+    background-color: blue;
+}
+
+button:nth-child(6) {
+    background-color: indigo;
+}
+
+button:nth-child(7) {
+    background-color: violet;
+}
+
+button:nth-child(8) {
+    background-color: red;
+}
+
+button:nth-child(9) {
+    background-color: orange;
+}
+
+button:nth-child(10) {
+    background-color: yellow;
+    color: black; /* Adjust text color for readability */
+}
+
+button:nth-child(11) {
+    background-color: green;
+}
+
+button:nth-child(12) {
+    background-color: blue;
+}
+
+button:nth-child(13) {
+    background-color: indigo;
+}
+
+button:nth-child(14) {
+    background-color: violet;
+}
+
+button:nth-child(15) {
+    background-color: red;
+}
+
+button:nth-child(16) {
+    background-color: orange;
+}
+
 button:hover {
-    background-color: #0056b3;
+    opacity: 0.9;
 }
